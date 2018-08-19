@@ -1,3 +1,8 @@
-/Users/jherrera/Dev/Projects/Java/IntroductionMLJava/src/main/java/com/mercadolibre/introduction/controllers/GreetingController.java
-/Users/jherrera/Dev/Projects/Java/IntroductionMLJava/src/main/java/com/mercadolibre/introduction/objects/Greeting.java
-/Users/jherrera/Dev/Projects/Java/IntroductionMLJava/src/main/java/com/mercadolibre/introduction/main/Application.java
+/Users/jherrera/Dev/Projects/Java/IntroductionConflictJava/src/main/java/introduction/services/ClaimsService.java
+/Users/jherrera/Dev/Projects/Java/IntroductionConflictJava/src/main/java/introduction/controllers/ClaimsController.java
+/Users/jherrera/Dev/Projects/Java/IntroductionConflictJava/src/main/java/introduction/mappers/Detail.java
+/Users/jherrera/Dev/Projects/Java/IntroductionConflictJava/src/main/java/introduction/utils/RestService.java
+/Users/jherrera/Dev/Projects/Java/IntroductionConflictJava/src/main/java/introduction/Application.java
+/Users/jherrera/Dev/Projects/Java/IntroductionConflictJava/src/main/java/introduction/utils/ParameterStringBuilder.java
+/Users/jherrera/Dev/Projects/Java/IntroductionConflictJava/src/main/java/introduction/mappers/Message.java
+/Users/jherrera/Dev/Projects/Java/IntroductionConflictJava/src/main/java/introduction/mappers/MessageDetail.java

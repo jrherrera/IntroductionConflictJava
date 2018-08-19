@@ -1,5 +1,5 @@
+introduction/controllers/ClaimsController.class
+introduction/mappers/Detail.class
 introduction/Application.class
-introduction/FrontendDetail.class
-introduction/Actions.class
-introduction/Greeting.class
-introduction/GreetingController.class
+introduction/services/ClaimsService.class
+introduction/utils/ParameterStringBuilder.class
