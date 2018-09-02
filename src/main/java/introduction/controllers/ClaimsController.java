@@ -61,9 +61,17 @@ public class ClaimsController {
     }
 }
 
+
+
+
 //TODO: considerar exceptions. apicalls que rompan y demas.
 
 //curl -H "Content-Type: application/json" -i -XGET "http://localhost:8080/claims/1023241276/detail?access_token=APP_USR-8070606397579233-081819-54ed35567db3b9279dba5886607f0607-344672346";
 //curl -H "Content-Type: application/json" -i -XGET "http://localhost:8080/orders/sellers/344672346?access_token=APP_USR-8070606397579233-081819-54ed35567db3b9279dba5886607f0607-344672346";
-//curl -H "Content-Type: application/json" -i -XPOST -d '{"message":"Prueba de mensajeee"}' "http://localhost:8080/claims/1023241276/messages?access_token=APP_USR-8070606397579233-081819-54ed35567db3b9279dba5886607f0607-344672346";
-//curl -H "Content-Type: application/json" -i -XPOST "http://localhost:8080/claims/1023241276/open_dispute?access_token=APP_USR-8070606397579233-081819-54ed35567db3b9279dba5886607f0607-344672346";
+//curl -H "Content-Type: application/json" -i -XPOST -d '{"message":"Prueba de mensajeee"}' "http://localhost:8080/claims/1023241276/messages?access_token=APP_USR-8070606397579233-090110-ac99028da545a513c8ebf33bbda186e8-344672346";
+//curl -H "Content-Type: application/json" -i -XPOST "http://localhost:8080/claims/1023241276/open_dispute?access_token=APP_USR-8070606397579233-090110-ac99028da545a513c8ebf33bbda186e8-344672346";
+
+//Consideraciones:
+//1 - Solo se pueden postear mensajes en la etapa de reclamos
+//2 - Solo se puede postear mensajes como vendedor.
+//3 - Antes de hacer el post de open dispute pimponear un par de mensajes.

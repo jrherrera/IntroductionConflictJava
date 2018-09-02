@@ -96,6 +96,14 @@ public class ClaimsService {
     }
 
     public static ClaimDetailMiddleend postMessage(String claimId, String message, String accessToken) throws Exception {
+
+        String claim = RestService.get(String.format(CLAIM_URI, claimId, accessToken));
+        Claims claimObject = mapperClaimsToObject(claim);
+        if ( !(claimObject.getStage().equals("claim")
+                && claimObject.getStatus().equals("opened")) ) {
+            throw new Exception("Invalid status to post message");
+        }
+
         String json = String.format(MESSAGE_JSON, message);
         RestService.post(String.format(MESSAGES_URI, claimId, accessToken), json);
         ClaimDetailMiddleend claimDetailMiddleend = getClaimDetail(claimId, accessToken);
@@ -103,6 +111,15 @@ public class ClaimsService {
     }
 
     public static ClaimDetailMiddleend openDispute(String claimId, String accessToken) throws Exception {
+
+        String claim = RestService.get(String.format(CLAIM_URI, claimId, accessToken));
+        Claims claimObject = mapperClaimsToObject(claim);
+
+        if ( !(claimObject.getStage().equals("claim")
+                && claimObject.getStatus().equals("opened")) ) {
+            throw new Exception("Invalid status to open dispute");
+        }
+
         RestService.put(String.format(CLAIM_URI, claimId, accessToken), STAGE_DISPUTE_JSON);
         ClaimDetailMiddleend claimDetailMiddleend = getClaimDetail(claimId, accessToken);
         return claimDetailMiddleend;
