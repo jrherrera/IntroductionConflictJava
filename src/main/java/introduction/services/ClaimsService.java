@@ -21,8 +21,7 @@ import static introduction.mappers.utils.Utils.*;
  */
 public class ClaimsService {
 
-    //vendedor : 344672346	TETE3864003	qatest2015
-    //comprador: 344672287	TT114983	qatest6065
+
     private static final Logger log = LoggerFactory.getLogger(ClaimsService.class);
 
     private static final List<String> ACTIONS = Arrays.asList("send_message", "opend_dispute");
